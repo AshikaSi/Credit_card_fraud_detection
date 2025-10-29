@@ -106,6 +106,8 @@ plot_model(iforest, plot='tsne')
 | **PyCaret (Supervised)**      | Auto-tuning gave similar or higher recall with less manual work | Random Forest / CatBoost |
 | **PyCaret (Unsupervised)**    | Isolation Forest effectively isolated fraud cases               | Isolation Forest         |
 
--✅ Balancing techniques (especially SMOTE) significantly improved recall.
--✅ PyCaret reduced modeling time drastically with automated comparisons.
--✅ Unsupervised models offered valuable insight into unknown fraud patterns.
+- ✅ Balancing techniques (especially SMOTE) significantly improved recall.
+- ✅ PyCaret reduced modeling time drastically with automated comparisons.
+- ✅ Unsupervised models offered valuable insight into unknown fraud patterns.
+
+
