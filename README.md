@@ -90,12 +90,12 @@ iforest = create_model('iforest')     # Isolation Forest
 results = assign_model(iforest)
 plot_model(iforest, plot='tsne')
 ```
--Models Used
- -Isolation Forest
- -DBSCAN
- -KMeans
- -One-Class SVM
- -PCA-based Detection
+#### **Models Used**
+ - Isolation Forest
+ - DBSCAN
+ - KMeans
+ - One-Class SVM
+ - PCA-based Detection
 
 📊 Anomalies identified by these models were compared visually using t-SNE and UMAP plots.
 
