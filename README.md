@@ -69,6 +69,7 @@ PyCaret simplifies the entire ML workflow — from setup to model comparison —
 from pycaret.classification import *
 clf = setup(data=df, target='Class', session_id=123)
 best_model = compare_models()
+```
 
 📊 PyCaret Automated Modeling  
 
@@ -88,4 +89,23 @@ anom = setup(data=df, session_id=123)
 iforest = create_model('iforest')     # Isolation Forest
 results = assign_model(iforest)
 plot_model(iforest, plot='tsne')
+```
+-Models Used
+ -Isolation Forest
+ -DBSCAN
+ -KMeans
+ -One-Class SVM
+ -PCA-based Detection
 
+📊 Anomalies identified by these models were compared visually using t-SNE and UMAP plots.
+
+### 🏆 Results & Insights
+| Approach                      | Key Highlights                                                  | Best Performing Model    |
+| ----------------------------- | --------------------------------------------------------------- | ------------------------ |
+| **Manual ML (Balanced Data)** | Improved minority class detection after SMOTE                   | XGBoost / LightGBM       |
+| **PyCaret (Supervised)**      | Auto-tuning gave similar or higher recall with less manual work | Random Forest / CatBoost |
+| **PyCaret (Unsupervised)**    | Isolation Forest effectively isolated fraud cases               | Isolation Forest         |
+
+-✅ Balancing techniques (especially SMOTE) significantly improved recall.
+-✅ PyCaret reduced modeling time drastically with automated comparisons.
+-✅ Unsupervised models offered valuable insight into unknown fraud patterns.
