@@ -69,3 +69,23 @@ PyCaret simplifies the entire ML workflow — from setup to model comparison —
 from pycaret.classification import *
 clf = setup(data=df, target='Class', session_id=123)
 best_model = compare_models()
+
+📊 PyCaret Automated Modeling  
+
+PyCaret automatically trains and ranks multiple classification models  
+(Logistic Regression, Random Forest, LightGBM, XGBoost, etc.)  
+based on metrics like **AUC**, **F1**, and **Precision-Recall**.  
+
+---
+
+#### **(b) Unsupervised / Anomaly Detection**  
+
+To explore fraud detection **without labels**, PyCaret’s **Anomaly Detection** module was used:  
+
+```python
+from pycaret.anomaly import *
+anom = setup(data=df, session_id=123)
+iforest = create_model('iforest')     # Isolation Forest
+results = assign_model(iforest)
+plot_model(iforest, plot='tsne')
+
