@@ -104,7 +104,7 @@ plot_model(iforest, plot='tsne')
 | ----------------------------- | --------------------------------------------------------------- | ------------------------ |
 | **Manual ML (Balanced Data)** | Improved minority class detection after SMOTE                   | XGBoost / LightGBM       |
 | **PyCaret (Supervised)**      | Auto-tuning gave similar or higher recall with less manual work | Random Forest / CatBoost |
-| **PyCaret (Unsupervised)**    | Isolation Forest effectively isolated fraud cases               | Isolation Forest         |
+| **Anomaly Detection (Unsupervised)**    | Isolation Forest effectively isolated fraud cases               | Isolation Forest         |
 
 - ✅ Balancing techniques (especially SMOTE) significantly improved recall.
 - ✅ PyCaret reduced modeling time drastically with automated comparisons.
