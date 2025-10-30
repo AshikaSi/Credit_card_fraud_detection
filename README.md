@@ -81,21 +81,11 @@ based on metrics like **AUC**, **F1**, and **Precision-Recall**.
 
 #### **(b) Unsupervised / Anomaly Detection**  
 
-To explore fraud detection **without labels**, PyCaret’s **Anomaly Detection** module was used:  
+To explore fraud detection **without labels**, **Anomaly Detection** module was used:  
 
-```python
-from pycaret.anomaly import *
-anom = setup(data=df, session_id=123)
-iforest = create_model('iforest')     # Isolation Forest
-results = assign_model(iforest)
-plot_model(iforest, plot='tsne')
-```
 #### **Models Used**
  - Isolation Forest
- - DBSCAN
- - KMeans
  - One-Class SVM
- - PCA-based Detection
 
 📊 Anomalies identified by these models were compared visually using t-SNE and UMAP plots.
 
